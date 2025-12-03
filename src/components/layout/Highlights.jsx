@@ -88,7 +88,7 @@ const Highlights = () => {
 
                         </Flex>
 
-                        <div className="bg-cover bg-center p-4 rounded-2xl border-l-2 border-l-[#0055ff]" style={{ backgroundImage: "url('/images/offlineBG.png')" }}>
+                        <div className=" p-4 rounded-2xl border-l-2 border-l-[#0055ff]  bg-[linear-gradient(114.36deg,rgba(255,0,4,0.05)_0.46%,rgba(0,3,207,0.05)_101.25%)]" >
                             <div className="inline-flex items-center gap-1 bg-[#EAE4E9] rounded-2xl py-1 px-2 mb-10">
                                 <Image src="/images/blue.png" />
                                 <p>Offline Class - Onsite in Campus: 32 Class</p>
@@ -115,7 +115,7 @@ const Highlights = () => {
 
 
 
-                        <div className="bg-cover mt-4  bg-center p-4 rounded-2xl border-l-2 border-l-[#ff4405]" style={{ backgroundImage: "url('/images/offlineBG.png')" }}>
+                        <div className=" mt-4 p-4 rounded-2xl border-l-2 border-l-[#ff4405]  bg-[linear-gradient(114.36deg,rgba(255,0,4,0.05)_0.46%,rgba(0,3,207,0.05)_101.25%)]">
                             <div className="inline-flex items-center gap-1 bg-[#EAE4E9] rounded-2xl py-1 px-2 mb-10">
                                 <Image src="/images/red.png" className={''} />
                                 <p>Extra Online & Recorded Class: 20 Class</p>

@@ -5,16 +5,32 @@ import SliderOne from '../layout/SliderOne'
 import Highlights from '../layout/Highlights'
 import Courses from '../layout/Courses'
 import Software from '../layout/Software'
+import VideoList from '../layout/VideoList'
+import Structure from '../layout/Structure'
+import Payment from '../layout/Payment'
+import FAQ from '../layout/FAQ'
+import OurStudentWork from '../layout/OurStudentWork'
+import Admission from '../layout/Admission'
+import Feedback from '../layout/Feedback'
+import OurExclusiveServices from '../layout/OurExclusiveServices'
 
 const Home = () => {
   return (
     <div>
-      <Banner/>
-      <OurFacilities/>
-      <SliderOne/>
-      <Highlights/>
-      <Courses/>
-      <Software/>
+      <Banner />
+      <OurFacilities />
+      <SliderOne />
+      <Highlights />
+      <Courses />
+      <Software />
+      <VideoList />
+      <Structure />
+      <Admission />
+      <OurStudentWork />
+      <Feedback />
+      <FAQ />
+      <OurExclusiveServices />
+      <Payment />
     </div>
   )
 }
