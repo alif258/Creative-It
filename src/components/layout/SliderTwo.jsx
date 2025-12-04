@@ -44,7 +44,7 @@ const SliderTwo = () => {
             {
                 breakpoint: 1280,
                 settings: {
-                    slidesToShow: 6,
+                    slidesToShow: 5,
                     slidesToScroll: 1,
                     arrows: true,
                 },

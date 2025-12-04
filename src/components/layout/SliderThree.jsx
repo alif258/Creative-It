@@ -48,7 +48,7 @@ const SliderThree = () => {
     {
         breakpoint: 1280, // T
         settings: {
-            slidesToShow: 5,
+            slidesToShow: 4,
             slidesToScroll: 1,
             arrows: true,
         },
@@ -72,7 +72,7 @@ const SliderThree = () => {
     {
         breakpoint: 640, 
         settings: {
-            slidesToShow: 2,
+            slidesToShow: 1,
             slidesToScroll: 1,
             arrows: true,
         },
