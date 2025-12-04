@@ -29,50 +29,52 @@ const PrevArrow = ({ onClick }) => {
 };
 
 const SliderTwo = () => {
-const settings = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    
-    slidesToShow: 2, 
-    slidesToScroll: 1,
-    autoplay: false,
-    arrows: true,
-    nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />,
-    mobileFirst: true, 
+    const settings = {
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        autoplay: false,
+        arrows: true,
+        nextArrow: <NextArrow />,
+        prevArrow: <PrevArrow />,
 
-    responsive: [
-        {
-            breakpoint: 640, 
-            settings: {
-                slidesToShow: 3, 
-                slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1280,
+                settings: {
+                    slidesToShow: 5,
+                    slidesToScroll: 1,
+                    arrows: true,
+                },
             },
-        },
-        {
-            breakpoint: 768, 
-            settings: {
-                slidesToShow: 4, 
-                slidesToScroll: 1,
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                    arrows: true,
+                },
             },
-        },
-        {
-            breakpoint: 1024, 
-            settings: {
-                slidesToShow: 5, 
-                slidesToScroll: 1,
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    arrows: true,
+                },
             },
-        },
-        {
-            breakpoint: 1280, 
-            settings: {
-                slidesToShow: 6, 
-                slidesToScroll: 1,
+            {
+                breakpoint: 640,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    arrows: true,
+                },
             },
-        },
-    ],
-};
+        ],
+    };
 
     return (
         <Container >
