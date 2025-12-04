@@ -31,53 +31,49 @@ const PrevArrow = ({ onClick }) => {
 };
 
 const SliderFour = () => {
-    const settings = {
-        dots: false,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        autoplay: false,
-        arrows: true,
-        nextArrow: <NextArrow />,
-        prevArrow: <PrevArrow />,
-        mobileFirst: true,
-
-        responsive: [
-            {
-                breakpoint: 1280,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                    arrows: true,
-                },
+   const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    
+    slidesToShow: 3, 
+    slidesToScroll: 1,
+    autoplay: false,
+    arrows: true,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
+    mobileFirst: true, 
+    responsive: [
+        {
+            breakpoint: 640, 
+            settings: {
+                slidesToShow: 1, 
+                slidesToScroll: 1,
             },
-            {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                    arrows: true,
-                },
+        },
+        {
+            breakpoint: 768, 
+            settings: {
+                slidesToShow: 2, 
+                slidesToScroll: 1,
             },
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    arrows: true,
-                },
+        },
+        {
+            breakpoint: 1024, 
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
             },
-            {
-                breakpoint: 640,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    arrows: true,
-                },
+        },
+        {
+            breakpoint: 1280, 
+            settings: {
+                slidesToShow: 3, 
+                slidesToScroll: 1,
             },
-        ],
-    };
+        },
+    ],
+};
 
     return (
         <Container >

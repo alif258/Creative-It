@@ -27,57 +27,54 @@ const PrevArrow = ({ onClick }) => {
 };
 
 const SliderOne = () => {
-  const settings = {
+ const settings = {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 7,
+    
+    slidesToShow: 3, 
     slidesToScroll: 1,
     autoplay: false,
     arrows: true,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
-    mobileFirst: true,
+    mobileFirst: true, 
 
     responsive: [
-      {
-        breakpoint: 1280,
-        settings: {
-          slidesToShow: 4,
-          slidesToScroll: 1,
-          arrows: true,
+        {
+            breakpoint: 640, 
+            settings: {
+                slidesToShow: 3, 
+                slidesToScroll: 1,
+            },
         },
-      },
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          arrows: true,
+        {
+            breakpoint: 768, 
+            settings: {
+                slidesToShow: 3, 
+                slidesToScroll: 1,
+            },
         },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          arrows: true,
+        {
+            breakpoint: 1024, 
+            settings: {
+                slidesToShow: 4, 
+                slidesToScroll: 1,
+            },
         },
-      },
-      {
-        breakpoint: 640,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          arrows: true,
+        {
+            breakpoint: 1280,
+            settings: {
+                slidesToShow: 7, 
+                slidesToScroll: 1,
+            },
         },
-      },
     ],
-  };
+};
 
   return (
     <Container >
-      <div className="relative px-4 sm:px-3 md:px-0 ">
+      <div className="relative px-4 sm:px-3 md:px-0 text-center items-center ">
         <Slider
           {...settings}
           className="bg-[#20213A] font-semibold pl-6 text-[#FFFFFF] text-[14px] leading-[150%] py-4 rounded-2xl"
