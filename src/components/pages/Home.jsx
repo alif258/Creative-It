@@ -13,6 +13,7 @@ import OurStudentWork from '../layout/OurStudentWork'
 import Admission from '../layout/Admission'
 import Feedback from '../layout/Feedback'
 import OurExclusiveServices from '../layout/OurExclusiveServices'
+import Module from '../layout/Module'
 
 const Home = () => {
   return (
@@ -25,6 +26,7 @@ const Home = () => {
       <Software />
       <VideoList />
       <Structure />
+      <Module/>
       <Admission />
       <OurStudentWork />
       <Feedback />

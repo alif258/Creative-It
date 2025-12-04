@@ -43,7 +43,7 @@ const FAQ = () => {
 
 
     return (
-        <Container>
+        <Container className={'px-4 sm:px-3 md:px-0'}>
             <div className="mt-[100px]">
                 <h2 className="font-semibold text-[20px] leading-[150%] text-[#1F1E1E] py-3 pl-6 bg-[linear-gradient(118.27deg,rgba(78,84,200,0.1)_0%,rgba(205,208,255,0.1)_90.2%)] rounded-2xl border mb-2 border-[#cbc3dd]">
                     Frequently Asked Questions (FAQ)
@@ -54,16 +54,16 @@ const FAQ = () => {
                         <div
                             key={index}
                             onClick={() => toggleFAQ(index)}
-                            className="rounded-xl py-4 px-6 bg-[linear-gradient(122.33deg,rgba(143,148,251,0.05)_0%,rgba(78,84,200,0.05)_102.08%)] "
+                            className="rounded-xl  px-6  bg-[linear-gradient(122.33deg,rgba(143,148,251,0.05)_0%,rgba(78,84,200,0.05)_102.08%)] "
                         >
                             <div className="flex justify-between items-center">
-                                <h3 className="font-semibold text-[16px] leading-[150%] text-[#342B27]">{faq.question}</h3>
+                                <h3 className="font-semibold text-[16px] leading-[150%] text-[#342B27] pr-6 py-4">{faq.question}</h3>
                                 <span className="text-xl font-bold w-5 h-5 flex items-center justify-center">
                                     {openIndex === index ? (
-                        <img src="/images/Minus.png" alt="pic1" className="mb-1 m-auto  w-full" />
-                                    ) : (
-                        <img src="/images/Plus.png" alt="pic1" className="mb-1 m-auto  w-full" />
-                                    )}
+                                        <div className="h-8 w-8 "><img src="/images/Minus.png" alt="pic1" className="mb-1" />
+                                        </div>) : (
+                                        <div className="h-8 w-8 "><img src="/images/Plus.png" alt="pic1" className="mb-1" />
+                                        </div>)}
                                 </span>
 
                             </div>

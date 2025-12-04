@@ -7,7 +7,7 @@ const OurFacilities = () => {
 
     return (
         <>
-            <Container className="">
+            <Container className="px-4 sm:px-3 md:px-0">
                <div className="px-4 sm:px-6 md:px-5 py-5 shadow-sm rounded-2xl">
                  <div className="w-full flex flex-wrap gap-x-4 sm:gap-x-6 md:gap-x-[72px] gap-y-4 font-medium text-[14px] leading-[150%] text-[#605F62] mb-4">
                     {[

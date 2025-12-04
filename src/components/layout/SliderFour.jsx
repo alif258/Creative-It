@@ -5,11 +5,13 @@ import Container from "../Container";
 import Image from "../Image";
 import Flex from "../Flex";
 
+// --- Updated NextArrow Component ---
 const NextArrow = ({ onClick }) => {
     return (
         <div
             onClick={onClick}
-            className="absolute -right-10 top-1/2 -translate-y-1/2 cursor-pointer z-20"
+   
+            className="absolute -right-2 top-1/2 md:-right-10 md:top-1/2 -translate-y-1/2 cursor-pointer z-20"
         >
             <Image src="/images/next02.png" />
         </div>
@@ -20,7 +22,8 @@ const PrevArrow = ({ onClick }) => {
     return (
         <div
             onClick={onClick}
-            className="absolute -left-10 top-1/2 -translate-y-1/2 cursor-pointer z-20"
+           
+            className="absolute -left-2 top-1/2 md:-left-10 md:top-1/2 -translate-y-1/2 cursor-pointer z-20"
         >
             <Image src="/images/prev02.png" />
         </div>
@@ -43,7 +46,7 @@ const SliderFour = () => {
             {
                 breakpoint: 1280,
                 settings: {
-                    slidesToShow: 6,
+                    slidesToShow: 2,
                     slidesToScroll: 1,
                     arrows: true,
                 },
@@ -51,7 +54,7 @@ const SliderFour = () => {
             {
                 breakpoint: 1024,
                 settings: {
-                    slidesToShow: 4,
+                    slidesToShow: 2,
                     slidesToScroll: 1,
                     arrows: true,
                 },
@@ -59,7 +62,7 @@ const SliderFour = () => {
             {
                 breakpoint: 768,
                 settings: {
-                    slidesToShow: 3,
+                    slidesToShow: 1,
                     slidesToScroll: 1,
                     arrows: true,
                 },
@@ -67,7 +70,7 @@ const SliderFour = () => {
             {
                 breakpoint: 640,
                 settings: {
-                    slidesToShow: 3,
+                    slidesToShow: 1,
                     slidesToScroll: 1,
                     arrows: true,
                 },
@@ -77,7 +80,7 @@ const SliderFour = () => {
 
     return (
         <Container >
-            <div className=" relative ">
+            <div className=" relative  -mx-2">
                 <Slider
                     {...settings}
                     className=""

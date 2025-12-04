@@ -31,7 +31,7 @@ const SliderOne = () => {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 9,
+    slidesToShow: 7,
     slidesToScroll: 1,
     autoplay: false,
     arrows: true,
@@ -42,7 +42,7 @@ const SliderOne = () => {
       {
         breakpoint: 1280,
         settings: {
-          slidesToShow: 6,
+          slidesToShow: 4,
           slidesToScroll: 1,
           arrows: true,
         },
@@ -50,7 +50,7 @@ const SliderOne = () => {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 4,
+          slidesToShow: 3,
           slidesToScroll: 1,
           arrows: true,
         },
@@ -76,10 +76,10 @@ const SliderOne = () => {
 
   return (
     <Container >
-      <div className="relative px-4 sm:px-3 md:px-0 px-">
+      <div className="relative px-4 sm:px-3 md:px-0 ">
         <Slider
           {...settings}
-          className="bg-[#20213A] font-semibold text-[#FFFFFF] text-[14px] leading-[150%] py-4 rounded-2xl"
+          className="bg-[#20213A] font-semibold pl-6 text-[#FFFFFF] text-[14px] leading-[150%] py-4 rounded-2xl"
         >
           <div>Course Overview</div>
           <div>Course Structure</div>
