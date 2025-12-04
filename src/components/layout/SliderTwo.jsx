@@ -39,6 +39,7 @@ const SliderTwo = () => {
         arrows: true,
         nextArrow: <NextArrow />,
         prevArrow: <PrevArrow />,
+        mobileFirst: true,
 
         responsive: [
             {

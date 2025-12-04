@@ -43,6 +43,7 @@ const SliderThree = () => {
         arrows: true,
         nextArrow: <NextArrow />,
         prevArrow: <PrevArrow />,
+        mobileFirst: true,
 
         responsive: [
     {
