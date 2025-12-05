@@ -10,13 +10,11 @@ const Header = () => {
   return (
     <>
 
-      {/* top section */}
       <div className="topSection pt-4 sm:pt-6 md:pt-8 pb-3 sm:pb-4 md:pb-5 flex justify-center text-center bg-linear-to-r from-[#292F99] to-[#0E1033]
              text-white text-[14px] sm:text-[16px] leading-[150%] px-4 sm:px-6 md:px-0">
         Banner of the Campaign - আমাদের এই কোর্সে এখন ঈদ অফার চলছে।  অফারটি জানতে এখানে ক্লিক করুন Button will be here।
       </div>
 
-      {/* menu section */}
       <Container>
         <div className="
       mainMenu 
@@ -28,11 +26,9 @@ const Header = () => {
       justify-between items-center 
       gap-4 md:gap-0">
 
-          {/* Logo */}
           <div className="logo flex w-full justify-between items-center md:w-auto">
             <Image src='/images/citLogo.png' className="w-32 sm:w-36 md:w-40" />
 
-            {/* Mobile Hamburger Button */}
             <button
               className="md:hidden text-3xl"
               onClick={() => setOpen(!open)}
@@ -42,7 +38,6 @@ const Header = () => {
           </div>
 
 
-          {/* Menu */}
           <div className={`menu w-full md:w-auto 
         ${open ? "block" : "hidden"} 
         md:block transition-all duration-300`}>
@@ -56,7 +51,6 @@ const Header = () => {
               </Flex>
             </ul>
 
-            {/* Mobile Button */}
             <div className="mt-4 md:hidden">
               <button className=' items-center font-semibold text-white text-[14px] flex gap-1 py-2 px-3 bg-gradient-to-r from-[#FF1E1E] to-[#FF5E5E] rounded-2xl'>
                 <Image src='/images/Frame.png' className="w-4 h-4" />
@@ -66,7 +60,6 @@ const Header = () => {
           </div>
 
 
-          {/* Desktop Button */}
           <div className="btn hidden md:block">
             <button className=' items-center font-semibold text-white text-[14px] sm:text-[16px] flex gap-1 py-2 px-3 sm:py-2.5 sm:px-4 md:py-2.5 md:px-4 bg-gradient-to-r from-[#FF1E1E] to-[#FF5E5E] rounded-2xl'>
               <Image src='/images/Frame.png' className="w-4 h-4 sm:w-5 sm:h-5 md:w-5 md:h-5" />
@@ -79,7 +72,6 @@ const Header = () => {
 
 
 
-      {/* scrolling text section */}
       <div className="overflow-hidden w-full bg-[#f4f4f4] py-1.5">
         <div className="flex animate-slide whitespace-nowrap">
           <p className="text-[10px] sm:text-[12px] mr-[50px] sm:mr-[80px] md:mr-[102px] text-[#7E7E7E]">
@@ -88,7 +80,6 @@ const Header = () => {
           <p className="text-[10px] sm:text-[12px] mr-[50px] sm:mr-[80px] md:mr-[102px] text-[#7E7E7E]">
             CIT তে <span className="text-[#DA7325]">কোর্স ফি</span> এককালীন অথবা <span className="text-[#DA7325]">সহজ কিস্তিতে পরিশোধ</span> করা যায়।
           </p>
-          {/* Duplicate for seamless scroll */}
           <p className="text-[10px] sm:text-[12px] mr-[50px] sm:mr-[80px] md:mr-[102px] text-[#7E7E7E]">
             CIT তে <span className="text-[#DA7325]">কোর্স ফি</span> এককালীন অথবা <span className="text-[#DA7325]">সহজ কিস্তিতে পরিশোধ</span> করা যায়।
           </p>

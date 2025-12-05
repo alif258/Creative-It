@@ -8,7 +8,6 @@ import 'swiper/css/navigation';
 import Flex from '../Flex';
 import Image from '../Image';
 
-// Testimonial Data
 const testimonialData = [
     {
         id: 1,
@@ -44,7 +43,6 @@ const testimonialData = [
     },
 ];
 
-// Custom Next Arrow
 const NextArrow = () => (
     <div
         className="swiper-button-next-custom-4 absolute -right-4 top-1/2 md:-right-10 -translate-y-1/2 cursor-pointer z-50"
@@ -53,7 +51,6 @@ const NextArrow = () => (
     </div>
 );
 
-// Custom Prev Arrow
 const PrevArrow = () => (
     <div
         className="swiper-button-prev-custom-4 absolute -left-4 top-1/2 md:-left-10 -translate-y-1/2 cursor-pointer z-50"
